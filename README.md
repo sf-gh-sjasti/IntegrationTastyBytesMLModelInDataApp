@@ -4,13 +4,13 @@ Snowflake has simplified the integration of Machine Learning models into Data Ap
 In this tutorial, the application you are building helps fictitious food truck company, Tasty Bytes and it's Truck drivers to view the location recommendations provided by the ML model directly in the Data Application. This Location Recommendation ML model is built within Snowflake using Snowpark which makes it easy for python users to leverage Snowflake platform. This model uses historical sales data and Safegraph weather data from Snowflake Data Marketplace to provide more information to the model. This tutorial will guide you through the process of how we are deploying and integrating ML model into the Truck Driver App.  
 
 To run the app locally,
-
+### Step 1: Get the Source Code
 1. Clone the repo using ``` git clone https://github.com/sf-gh-sjasti/IntegrationTastyBytesMLModelInDataApp.git reactNativeMLApp ```
 2. Navigate to the folder, ``` cd reactNativeMLApp ```
 3. Run ``` npm install ``` to install dependancies
 
 ### Step 2: Configure the application
-1. Open the ``` reactNativeApp ``` folder in VS Code or IDE of your choice.
+1. Open the ``` reactNativeMLApp ``` folder in VS Code or IDE of your choice.
 2. Open the ``` .env ``` file and update ``` PRIVATE_KEY ``` value with the private key. Copy and paste the whole private key from ``` ~/.ssh/snowflake_app_key.pub ``` including header(``` -----BEGIN RSA PRIVATE KEY----- ```) and footer(``` -----END RSA PRIVATE KEY----- ```).
 3. If you are located in us-west region, Update ``` SNOWFLAKE_ACCOUNT_IDENTIFIER ``` with your Snowflake Account
    (or) If you are located outside the us-west region, Update ``` SNOWFLAKE_ACCOUNT_IDENTIFIER ``` as '<SNOWFLAKE ACCOUNT>.<REGION>'.
