@@ -3,7 +3,7 @@ import { FlatList, Text, View } from 'react-native';
 import { ListItem } from "react-native-elements";
 import Styles from './Styles';
 import bearerToken from "./Tokens";
-import { SNOWFLAKE_ACCOUNT } from '@env';
+import { SNOWFLAKE_ACCOUNT_IDENTIFIER } from '@env';
 
 export default function Locations({ route, navigation }) {
   const [isLoading, setLoading] = useState(true);
@@ -17,7 +17,7 @@ export default function Locations({ route, navigation }) {
       const date = new Date();
       setCurrentDate(date.toLocaleString());
       const shift = date.getHours() < 14 ? 1 : 0;
-      const response = await fetch('https://' + SNOWFLAKE_ACCOUNT + '.snowflakecomputing.com/api/v2/statements', {
+      const response = await fetch('https://' + SNOWFLAKE_ACCOUNT_IDENTIFIER + '.snowflakecomputing.com/api/v2/statements', {
         method: 'POST',
         headers: {
         Accept: 'application/json',
