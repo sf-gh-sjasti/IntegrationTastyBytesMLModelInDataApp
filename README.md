@@ -29,4 +29,4 @@ We are using Key Pair Authentication to authenticate with Snowflake using SQL AP
 3. Upon Launch, You can see the List of recommendations with predicted shift sales.
 
 For detailed steps, Refer to the Quickstart, 
-
+https://quickstarts.snowflake.com/guide/integrating_tasty_bytes_location_recommendation_ml_model_into_the_react_native_data_app
